@@ -49,7 +49,7 @@ bot.on("message", async message => {
     pUser.send(`La semaine est passée on t'a remis Terrarien. Ne recommence plus ;)`)}
  
     
-    
+  }
     
     
   }
