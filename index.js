@@ -1,4 +1,4 @@
-import botconfig from "./botconfig";
+
 import Discord from 'discord.js';
 
 
