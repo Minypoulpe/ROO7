@@ -1,7 +1,5 @@
-import botconfig from './botconfig';
-
-
-const bot = new Discord.Client();
+const botconfig require('../botconfig')
+const bot = new Discord.Client()
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
