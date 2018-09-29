@@ -33,7 +33,7 @@ bot.on("message", async message => {
     pUser.send(`Tu as reçu le rôle Terramerde car tu n'as pas respecter une des règles. Tu devrais les relire dans le salon #règles. Ton rôle sera retirer dans une semaine`)}
   }
   
- if (cmd === `${prefix}terramerde`){
+ else if (cmd === `${prefix}end`){
    let role = message.guild.roles.find('name', 'Terrarien')
    let role2 = message.guild.roles.find('name', 'Terramerde')
    let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
