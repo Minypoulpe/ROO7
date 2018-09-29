@@ -47,7 +47,7 @@ bot.on("message", async message => {
     pUser.removeRole(role2);
     message.channel.send(`${pUser} est de nouveau Terrarien.`);
     pUser.send(`Tu n'es plus Terramerde, tu as retrouvé tes permissions merci de respecter les règles dorénavant ;)`)}
-  }
+  
  }
     
 });
