@@ -65,7 +65,7 @@ module.exports.help = {
   name: "prefix"
 }
 
-   else if (cmd === `${prefix}end`){
+   if (cmd === `${prefix}end`){
    let role = message.guild.roles.find('name', 'Terrarien')
    let role2 = message.guild.roles.find('name', 'Terramerde')
    let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
