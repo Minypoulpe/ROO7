@@ -17,7 +17,9 @@ bot.on("message", async message => {
   let args = messageArray.slice(1);
 
   if (cmd === `${prefix}say`){
-    message.channel.send("nope");
+    message.delete();
+    let botmessage = args.join(" ");
+    message.channel.send(botmessage);
   }
 });
 
