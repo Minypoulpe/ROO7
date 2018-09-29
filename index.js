@@ -35,37 +35,29 @@ bot.on("message", async message => {
   let args = messageArray.slice(1);
   
   const Discord = require("discord.js");
-const fs = require("fs");
+  const fs = require("fs");
 
 module.exports.run = async (bot, message, args) => {
+  if (cmd === `${prefix}end`{
+        let role = message.guild.roles.find('name', 'Terrarien')
+        let role2 = message.guild.roles.find('name', 'Terramerde')
+        
+        let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
+        if(!pUser) return message.channel.send("Je ne trouve pas ce membre");
 
+  if(message.member.roles.find('name', 'Terramerde')){
+    message.channel.send("Il a déjà ce rôle")
+  }
 
-  if(!args[0] || args[0 == "help"]) return message.reply("Usage: !prefix <desired prefix here>");
+  else{
+    pUser.addRole(role2);
+    pUser.removeRole(role);
+    message.channel.send(`${pUser} a reçu le rôle Terramerde. Merci de lui enlever dans 1 semaine et de lui remettre le rôle Terrarien.`);
+    pUser.send(`Tu as reçu le rôle Terramerde car tu n'as pas respecter une des règles. Tu devrais les relire dans le salon #règles. Ton rôle sera retirer dans une semaine`)
+  }
 
-  let prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8"));
-
-  prefixes[message.guild.id] = {
-    prefixes: args[0]
-  };
-
-  fs.writeFile("./prefixes.json", JSON.stringify(prefixes), (err) => {
-    if (err) console.log(err)
-  });
-
-  let sEmbed = new Discord.RichEmbed()
-  .setColor("#FF9900")
-  .setTitle("Prefix Set!")
-  .setDescription(`Set to ${args[0]}`);
-
-  message.channel.send(sEmbed);
-
-}
-
-module.exports.help = {
-  name: "prefix"
-}
-
-   if (cmd === `${prefix}end`){
+  
+ else if (cmd === `${prefix}end`){
    let role = message.guild.roles.find('name', 'Terrarien')
    let role2 = message.guild.roles.find('name', 'Terramerde')
    let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
