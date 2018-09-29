@@ -31,7 +31,27 @@ bot.on("message", async message => {
     pUser.removeRole(role);
     message.channel.send(`${pUser} a reçu le rôle Terramerde. Merci de lui enlever dans 1 semaine et de lui remettre le rôle Terrarien.`);
     pUser.send(`Tu as reçu le rôle Terramerde car tu n'as pas respecter une des règles. Tu devrais les relire dans le salon #règles. Ton rôle sera retirer dans une semaine`)}
-      
+ 
+    
+  if (cmd === `${prefix}end`){    
+    let role = message.guild.roles.find('name', 'Terrarien')
+    let role2 = message.guild.roles.find('name', 'Terramerde')
+    let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
+    if(!pUser) return message.channel.send("Je ne trouve pas ce membre");
+    
+    if(message.member.roles.find('name', 'Terrarien')){
+    message.channel.send("Il est déjà Terrarien")}
+    
+    else{
+    pUser.addRole(role);
+    pUser.removeRole(role2);
+    message.channel.send(`${pUser} n'est plus Terramerde, c'est de nouveau un Terrarien.`);
+    pUser.send(`La semaine est passée on t'a remis Terrarien. Ne recommence plus ;)`)}
+ 
+    
+    
+    
+    
   }
     
 });
