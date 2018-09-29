@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs");
+bot.commands = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
 
