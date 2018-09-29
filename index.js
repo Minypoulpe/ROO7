@@ -16,9 +16,10 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}ping`){
-    message.channel.send("Pong!");
-  }
+  if (cmd === `${prefix}say`){
+  message.delete();
+  let botmessage = args.join(" ");
+  message.channel.send(botmessage);
 });
 
 bot.login(process.env.token);
