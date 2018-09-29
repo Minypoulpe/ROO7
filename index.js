@@ -1,11 +1,6 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import Discord from 'discord.js';
-import { Message } from 'discord.js';
-import { MongoClient } from 'mongodb';
 import botconfig from './botconfig';
 
-const app = express();
+
 const bot = new Discord.Client();
 
 bot.on("ready", async () => {
