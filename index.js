@@ -1,7 +1,12 @@
-import config from './config';
+import express from 'express';
+import bodyParser from 'body-parser';
+import Discord from 'discord.js';
+import { Message } from 'discord.js';
+import { MongoClient } from 'mongodb';
+import botconfig from './botconfig';
 
-const Discord = require("discord.js");
-const bot = new Discord.Client({disableEveryone: true});
+const app = express();
+const bot = new Discord.Client();
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
