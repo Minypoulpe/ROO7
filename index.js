@@ -20,6 +20,6 @@ bot.on("message", async message => {
   message.delete();
   let botmessage = args.join(" ");
   message.channel.send(botmessage);
-};
+  }
 
 bot.login(process.env.token);
