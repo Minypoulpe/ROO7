@@ -1,4 +1,4 @@
-const botconfig require('../botconfig')
+const botconfig = require('../botconfig')
 const bot = new Discord.Client()
 
 bot.on("ready", async () => {
