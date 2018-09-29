@@ -16,11 +16,17 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}say`){
-    message.delete();
-    let botmessage = args.join(" ");
-    message.channel.send(botmessage);
-  }
+  
+  if (cmd === `${prefix}terramerde`){
+      let role = message.guild.roles.find('name', 'Terrarien')
+      let role2 = message.guild.roles.find('name', 'Terramerde')
+      let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
+      if(!pUser) return message.channel.send("Je ne trouve pas ce membre");
+    
+    if(message.member.roles.find('name', 'Terramerde')){
+    message.channel.send("Il a déjà ce rôle")}
+    
+    
 });
 
 bot.login(process.env.token);
