@@ -7,7 +7,7 @@ bot.on("ready", async () => {
 });
 
 bot.on("message", async message => {
-let prefix = '!'
+let prefix = "!";
 
  if(command === `${prefix}terramerde`) {
 
