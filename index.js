@@ -8,6 +8,7 @@ bot.on("ready", async () => {
 
 bot.on("message", async message => {
 let prefix = "!";
+let cmd = messageArray[0];
 
  if(command === `${prefix}terramerde`) {
 
