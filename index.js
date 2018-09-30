@@ -1,5 +1,3 @@
-import config from './config';
-
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
@@ -55,4 +53,4 @@ let args = messageArray.slice(1);
  }
 });
 
-bot.login(config.token);
+bot.login(process.env.token);
