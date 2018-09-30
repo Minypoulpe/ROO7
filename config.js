@@ -1,3 +1,3 @@
 export default {
-  token: process.env.DBG_TOKEN
+  token: process.env.token
 }
