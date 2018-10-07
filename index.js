@@ -12,8 +12,9 @@ let messageArray = message.content.split(" ");
 let command = messageArray[0];
 let args = messageArray.slice(1);
   
-
- if(command === `${prefix}terramerde`) {
+ if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Tu n'as pas la permission de faire sa /:.");
+  
+ else if(command === `${prefix}terramerde`) {
 
   let role = message.guild.roles.find('name', 'Terrarien')
   let role2 = message.guild.roles.find('name', 'Terramerde')
