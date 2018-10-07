@@ -18,6 +18,10 @@ let args = messageArray.slice(1);
 
   let role = message.guild.roles.find('name', 'Terrarien')
   let role2 = message.guild.roles.find('name', 'Terramerde')
+  let role3 = message.guild.roles.find('name', 'Citoyen Terrarien🖐')
+  let role4 = message.guild.roles.find('name', 'Vétéran Terrarien 💪')
+  let role5 = message.guild.roles.find('name', '💣 Maître Terrarien⚔️')
+  let role6 = message.guold.roles.find('name', '🏹🗡Puissant Terrarien🏹🗡 ')
   let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   if(!pUser) return message.channel.send("Je ne trouve pas ce membre");
 
@@ -28,6 +32,10 @@ let args = messageArray.slice(1);
   else{
     pUser.addRole(role2);
     pUser.removeRole(role);
+    pUser.removeRole(role3);
+    pUser.removeRole(role4);
+    pUser.removeRole(role5);
+    pUser.removeRole(role6);
     message.channel.send(`${pUser} a reçu le rôle Terramerde. Merci de lui enlever dans 1 semaine et de lui remettre le rôle Terrarien.`);
     pUser.send(`Tu as reçu le rôle Terramerde car tu n'as pas respecter une des règles. Tu devrais les relire dans le salon #règles. Ton rôle sera retirer dans une semaine`)
     }
@@ -38,6 +46,10 @@ let args = messageArray.slice(1);
 
   let role = message.guild.roles.find('name', 'Terrarien')
   let role2 = message.guild.roles.find('name', 'Terramerde')
+  let role3 = message.guild.roles.find('name', 'Citoyen Terrarien🖐')
+  let role4 = message.guild.roles.find('name', 'Vétéran Terrarien 💪')
+  let role5 = message.guild.roles.find('name', '💣 Maître Terrarien⚔️')
+  let role6 = message.guold.roles.find('name', '🏹🗡Puissant Terrarien🏹🗡 ')
   let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   if(!pUser) return message.channel.send("Je ne trouve pas ce membre");
 
