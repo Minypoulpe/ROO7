@@ -65,4 +65,5 @@ let args = messageArray.slice(1);
  }
 });
 
-bot.login(process.env.token);a
+bot.login(process.env.token);
+
