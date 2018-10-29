@@ -12,7 +12,7 @@ let messageArray = message.content.split(" ");
 let command = messageArray[0];
 let args = messageArray.slice(1);
   
-  if(command === `${prefix}+terramerde`) {
+  if(command === `${prefix}terramerde`) {
 
   let role = message.guild.roles.find('name', 'Terrarien')
   let role2 = message.guild.roles.find('name', 'Terramerde💩')
@@ -40,7 +40,7 @@ let args = messageArray.slice(1);
  }
   
   
- else if(command === `${prefix}+end`) {
+ else if(command === `${prefix}end`) {
 
   let role = message.guild.roles.find('name', 'Terrarien')
   let role2 = message.guild.roles.find('name', 'Terramerde💩')
