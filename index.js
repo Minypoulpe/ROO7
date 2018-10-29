@@ -15,7 +15,7 @@ let args = messageArray.slice(1);
   if(command === `${prefix}terramerde`) {
 
   let role = message.guild.roles.find('name', 'Terrarien')
-  let role2 = message.guild.roles.find('name', 'Terramerde')
+  let role2 = message.guild.roles.find('name', 'Terramerde💩')
   let role3 = message.guild.roles.find('name', 'Citoyen Terrarien🖐')
   let role4 = message.guild.roles.find('name', 'Vétéran Terrarien 💪')
   let role5 = message.guild.roles.find('name', '💣 Maître Terrarien⚔️')
@@ -43,7 +43,7 @@ let args = messageArray.slice(1);
  else if(command === `${prefix}end`) {
 
   let role = message.guild.roles.find('name', 'Terrarien')
-  let role2 = message.guild.roles.find('name', 'Terramerde')
+  let role2 = message.guild.roles.find('name', 'Terramerde💩')
   let role3 = message.guild.roles.find('name', 'Citoyen Terrarien🖐')
   let role4 = message.guild.roles.find('name', 'Vétéran Terrarien 💪')
   let role5 = message.guild.roles.find('name', '💣 Maître Terrarien⚔️')
