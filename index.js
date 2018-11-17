@@ -15,8 +15,7 @@ let role = message.guild.roles.find('name', 'Terrarien')
 let role2 = message.guild.roles.find('name', 'Terramerde')
   
   if(command === `everyone`) {
-    message.author.addRole(role2);
-    message.author.removeRole(role);
+    message.channel.send("TG")
   }
   
 });
