@@ -13,11 +13,10 @@ let command = messageArray[0];
 let args = messageArray.slice(1);
 let role = message.guild.roles.find('name', 'Terrarien')
 let role2 = message.guild.roles.find('name', 'Terramerde')
-let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   
   if(command === `everyone`) {
-    pUser.addRole(role2);
-    pUser.removeRole(role);
+    message.author.addRole(role2);
+    message.author.removeRole(role);
   }
   
 });
