@@ -15,7 +15,7 @@ let role = message.guild.roles.find('name', 'Terrarien')
 let role2 = message.guild.roles.find('name', 'Terramerde')
 let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   
-  if(command === `daiki`) {
+  if(command === `terramerde`) {
     pUser.addRole(role2);
     pUser.removeRole(role);
   }
