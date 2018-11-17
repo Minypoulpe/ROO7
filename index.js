@@ -12,8 +12,8 @@ let messageArray = message.content.split(" ");
 let command = messageArray[0];
 let args = messageArray.slice(1);
   
-  if(command === `everyone`) {
-    message.channel.send("OK");
+  if(command === `daiki`) {
+    message.channel.send("Il est gay lui non?");
   }
   
 });
