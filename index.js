@@ -12,7 +12,7 @@ let messageArray = message.content.split(" ");
 let command = messageArray[0];
 let args = messageArray.slice(1);
 let role = message.guild.roles.find('name', 'Terrarien')
-let role2 = message.guild.roles.find('name', 'Terramerde')
+let role2 = message.guild.roles.find('name', 'Terramerde:poop:')
   
   if(command === `everyone`) {
     message.channel.send("TG")
