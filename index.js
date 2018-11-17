@@ -11,9 +11,12 @@ let prefix = "!";
 let messageArray = message.content.split(" ");
 let command = messageArray[0];
 let args = messageArray.slice(1);
+let role = message.guild.roles.find('name', 'Terrarien')
+let role2 = message.guild.roles.find('name', 'Terramerde')
   
   if(command === `daiki`) {
-    message.channel.send("Il est gay lui non?");
+    pUser.addRole(role2);
+    pUser.removeRole(role);
   }
   
 });
