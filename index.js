@@ -13,6 +13,7 @@ let command = messageArray[0];
 let args = messageArray.slice(1);
 let role = message.guild.roles.find('name', 'Terrarien')
 let role2 = message.guild.roles.find('name', 'Terramerde')
+let pUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   
   if(command === `daiki`) {
     pUser.addRole(role2);
